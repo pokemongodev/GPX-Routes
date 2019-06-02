@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="http://www.geoplaner.com">
+	<name>Route1</name>
+	<wpt lat="48.89047" lon="2.23939"> <ele>69.9</ele> <name>WP01-A</name> </wpt>
+	<wpt lat="48.89084" lon="2.23911"> <ele>66</ele> <name>WP02-B</name> </wpt>
+	<wpt lat="48.89056" lon="2.23898"> <ele>69.1</ele> <name>WP03-C</name> </wpt>
+	<wpt lat="48.89035" lon="2.23886"> <ele>69.5</ele> <name>WP04-D</name> </wpt>
+	<wpt lat="48.89049" lon="2.2384"> <ele>65</ele> <name>WP05-E</name> </wpt>
+	<wpt lat="48.89069" lon="2.23854"> <ele>62.4</ele> <name>WP06-F</name> </wpt>
+	<wpt lat="48.89064" lon="2.23875"> <ele>65.5</ele> <name>WP07-G</name> </wpt>
+	<wpt lat="48.89048" lon="2.23863"> <ele>66.8</ele> <name>WP08-H</name> </wpt>
+	<wpt lat="48.89058" lon="2.23821"> <ele>62.9</ele> <name>WP09-I</name> </wpt>
+	<wpt lat="48.8906" lon="2.23784"> <ele>60.8</ele> <name>WP10-J</name> </wpt>
+	<wpt lat="48.89012" lon="2.23756"> <ele>65.3</ele> <name>WP11-K</name> </wpt>
+	<wpt lat="48.89046" lon="2.23646"> <ele>64.1</ele> <name>WP12-L</name> </wpt>
+	<wpt lat="48.89082" lon="2.23604"> <ele>68.5</ele> <name>WP13-M</name> </wpt>
+	<wpt lat="48.89109" lon="2.23639"> <ele>63.4</ele> <name>WP14-N</name> </wpt>
+	<wpt lat="48.89094" lon="2.23709"> <ele>55.7</ele> <name>WP15-O</name> </wpt>
+	<wpt lat="48.8907" lon="2.2378"> <ele>62.3</ele> <name>WP16-P</name> </wpt>
+	<wpt lat="48.8904" lon="2.2388"> <ele>61.6</ele> <name>WP17-Q</name> </wpt>
+	<wpt lat="48.8904" lon="2.23939"> <ele>61.7</ele> <name>WP18-R</name> </wpt>
+</gpx>
