@@ -1,83 +1,231 @@
 <!Doctype html>
 <html lang="es">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Rutas GPX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
-    <style>
-        .rojonegrita {
-            font-weight: bold;
-            color: red;
-        }
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Rutas GPX</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+        <style>
+            .rojonegrita {
+                font-weight: bold;
+                color: red;
+            }
 
-    </style>
-</head>
+            .table>thead>tr>th {
+                background-color: #1C2331;
+                color: whitesmoke;
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-        <a class="navbar-brand" href="/GPX-Routes/index.html">GPX</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="Descargar.html">Descargar rutas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Importar.html">Turorial importar rutas</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Descargar Rutas GPX</h1>
+            }
+
+            .table>thead>tr>th,
+            .table>tbody>tr>td {
+                vertical-align: middle;
+                text-align: center;
+                border: 0.15rem solid black;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            tr>td:first-child {
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+            <a class="navbar-brand" href="/GPX-Routes/index.html">GPX</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Descargar.html">Descargar rutas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Importar.html">Turorial importar rutas</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-8 text">
-                <div class="list-group font-weight-bold">
-                    <a href="./Archivos/amsterdam_-_484_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">484 Pokestops</span> Amsterdam</a>
-                    <a href="./Archivos/barcelona_-_577_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">577 Pokestops</span> Barcelona</a>
-                    <a href="./Archivos/boston_-_522_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">522 Pokestops</span> Boston</a>
-                    <a href="./Archivos/brussels_-_494_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">94 Pokestops </span>Bruselas</a>
-                    <a href="./Archivos/chicago1_-_391_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">391 Pokestops</span> Chicago</a>
-                    <a href="./Archivos/chicago2_-_445_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">445 Pokestops</span> Chicago</a>
-                    <a href="./Archivos/dk_copenhagen_mall_-_walk.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">Copenhagen Mall</span></a>
-                    <a href="./Archivos/kyoto_-_406_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">406 Pokestops</span> Kyoto</a>
-                    <a href="./Archivos/kyoto2_-_548_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">548 Pokestops</span> Kyoto</a>
-                    <a href="./Archivos/kyoto3_-_384_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">384 Pokestops</span> Kyoto</a>
-                    <a href="./Archivos/london1_-_526_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">526 Ppokestop</span> Londres</a>
-                    <a href="./Archivos/london2_-_593_pokestops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">593 Pokestops</span> Londres</a>
-                    <a href="./Archivos/newyork1-532stops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">532 Pokestops</span> Nueva York</a>
-                    <a href="./Archivos/newyork2-508stops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">508 Pokestops</span> Nueva York</a>
-                    <a href="./Archivos/newyork3-570stops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">570 Pokestops</span> Nueva York</a>
-                    <a href="./Archivos/paris_mall.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">Paris Mall</span></a>
-                    <a href="./Archivos/unionsqsanfran-500stops.gpx" class="list-group-item list-group-item-action">Ruta <span style="color:red">500 Pokestops</span> Union Square San Francisco</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Descargar Rutas GPX</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <table class="table table-sm table-stripped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Ruta</th>
+                                <th>Descarga</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Ruta 484 Poképaradas en Amsterdam
+                                </td>
+                                <td>
+                                    <a class="btn btn-block btn-success" href="./Archivos/amsterdam_-_484_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 577 Poképaradas en Barcelona
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/barcelona_-_577_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 522 Poképaradas en Boston
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/boston_-_522_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 94 Poképaradas en Bruselas
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/brussels_-_494_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 391 Poképaradas en Chicago
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/chicago1_-_391_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 445 Poképaradas en en Chicago
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/chicago2_-_445_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta en Fisketorvet (Copenhague)
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/dk_copenhagen_mall_-_walk.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 406 Poképaradas en Kyoto
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/kyoto_-_406_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 548 Poképaradas en Kyoto
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/kyoto2_-_548_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 384 Poképaradas en Kyoto
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/kyoto3_-_384_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 526 Poképaradas en Londres
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/london1_-_526_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 593 Poképaradas en Londres
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/london2_-_593_pokestops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 532 Poképaradas en Nueva York
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/newyork1-532stops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 508 Poképaradas en Nueva York
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/newyork2-508stops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 570 Poképaradas en Nueva York
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/newyork3-570stops.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta Les Quatre Temps (París)
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-block" href="./Archivos/paris_mall.gpx">Descargar Ruta</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ruta 500 Poképaradas en Union Square San Francisco
+                                </td>
+                                <td>
+
+                                    <a class="btn btn-success btn-block" href="./Archivos/unionsqsanfran-500stops.gpx">Descargar Ruta</a>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
-</body>
+        <!-- /.container -->
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
+    </body>
 
 </html>
